@@ -32,7 +32,7 @@
   },
   "scripts": {
     "lint": "jshint src test",
-    "test": "npm run lint && mocha --require ./empower",
-    "watch": "mocha --require ./empower --watch"
+    "test": "npm run lint && mocha --ui tdd --require ./empower",
+    "watch": "mocha --ui tdd --require ./empower --watch"
   }
 }

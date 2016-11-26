@@ -1,25 +1,21 @@
 'use strict';
 
-var assert = require('power-assert');
+const assert = require('assert');
+const Sample = require('../lib/sample');
 
-var Sample = require('../lib/sample');
-
-describe('Sample', function () {
-    var sut;
-
-    beforeEach(function () {
+describe('Sample', () => {
+    let sut;
+    beforeEach(() => {
         sut = new Sample();
     });
-
-    describe('.status', function () {
-        it('は、trueであるべき', function () {
+    describe('.status', () => {
+        it('は、trueであるべき', () => {
             assert.ok(sut.status === true);
         });
     });
-
-    describe('#say()', function () {
-        it("は、'Hello TDDBC!'が返ってくるべき", function () {
-            assert(sut.say() === 'Hello TDDBC!');
+    describe('#say()', () => {
+        it("は、'Hello TDDBC!'が返ってくるべき", () => {
+            assert(sut.say() === 'Helo TDDBC!');
         });
     });
 });

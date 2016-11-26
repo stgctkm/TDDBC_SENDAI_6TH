@@ -1,4 +1,5 @@
 {
+  "esversion": 6,
   "strict": true,
   "curly": true,
   "eqeqeq": true,

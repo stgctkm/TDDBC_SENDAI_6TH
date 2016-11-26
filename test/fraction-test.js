@@ -14,7 +14,7 @@ suite('分数を表すFractionクラス', () => {
             assert(sut.denominator === 7);
         });
         test('文字列表現', () => {
-            assert(sut.toString() ===
+            assert(sut.getNotation() ===
 `4
 -
 7`);
@@ -30,7 +30,7 @@ suite('分数を表すFractionクラス', () => {
             assert(sut.denominator === 9);
         });
         test('文字列表現', () => {
-            assert(sut.toString() === '0\n-\n9');
+            assert(sut.getNotation() === '0\n-\n9');
         });
     });
 

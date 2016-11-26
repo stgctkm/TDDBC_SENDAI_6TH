@@ -30,7 +30,7 @@ class Fraction {
      * @override
      * @returns {string}
      */
-    toString() {
+    getNotation() {
         return `${this.numerator}\n-\n${this.denominator}`;
     }
 }
